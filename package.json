@@ -5,5 +5,22 @@
   "main": "index.js",
   "repository": "git@github.com:ValeriiMakhniuk/korus-test-task2.git",
   "author": "Valerii Makhniuk <vmakhnyuk@yandex.ru>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "htmlhint": "^0.14.1",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": "stylelint --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }
