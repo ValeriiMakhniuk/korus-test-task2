@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <form action="/" class="question-forom" method="POST">
+          <fieldset>
+            <legend>Ваш любимый язык программирования</legend>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="language"
+                id="language-js"
+                value="Javascript"
+                class="form-check-input"
+              />
+              <label for="language-js" class="form-check-label"
+                >Javascript</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="language"
+                id="language-python"
+                value="Python"
+                class="form-check-input"
+              />
+              <label for="language-python" class="form-check-label"
+                >Python</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Ваш любимый framework</legend>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="framework"
+                id="framework-react"
+                value="React"
+                class="form-check-input"
+              />
+              <label for="framework-react" class="form-check-label"
+                >React</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="framework"
+                id="framework-vue"
+                value="Vue"
+                class="form-check-input"
+              />
+              <label for="framework-vue" class="form-check-label">Vue</label>
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="framework"
+                id="framework-jango"
+                value="Jango"
+                class="form-check-input"
+              />
+              <label for="framework-jango" class="form-check-label"
+                >Jango</label
+              >
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
